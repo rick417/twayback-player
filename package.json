@@ -1,0 +1,35 @@
+{
+  "name": "twayback-player",
+  "version": "0.1.0",
+  "description": "a simple web interface to analyze html files from twayback",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twayback",
+    "cli"
+  ],
+  "author": "rick417 <rick417@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^9.0.0",
+    "dayjs": "^1.11.1",
+    "docdash": "^1.2.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.2.2",
+    "open": "^8.4.0",
+    "promise-sequential": "^1.1.1"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "twayback-player": "twayback-player.js"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "private": false
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>twayback player</title>
+	<meta name="description">
+	<meta name="robots" content="noindex, nofollow">
+</head>
+
+<body onload="start()">
+	<main id="main-container">
+		<div class="content">
+			<noscript>
+				<strong>We're sorry but this site doesn't work properly without JavaScript enabled. Please enable it
+					to continue.</strong>
+			</noscript>
+			<div id="stopEvt">
+			<iframe id="iframe" src="" width="49%" height="100%" style="right:0px;top:0px;position:absolute;"></iframe></div>
+			<div id="app">
+				<div class="col-xl-6">
+					<!-- Default Table -->
+					<div class="input-group">
+						<input type="text" class="form-control" id="search" name="example-group3-input1" placeholder="...">
+						<button type="button" class="btn btn-primary" onclick="search();">search</button>
+						<button type="button" class="btn btn-dark" onclick="reset();">reset</button>
+					</div><br>
+					<div class="block block-rounded">
+						<div class="block-header block-header-default">
+							<h3 class="block-title" id="tableTitle">Default Table</h3>
+							<div class="block-options">
+								<div class="block-options-item">
+									<code id="filesNumber"></code>
+								</div>
+							</div>
+						</div>
+						<div class="block-content" style="overflow: scroll;height: 36vh;">
+							<table class="js-table-checkable table table-hover table-vcenter js-table-checkable-enabled">
+								<thead>
+									<tr>
+										<th class="text-center" style="width: 50px;">
+										<th>TweetID</th>
+										<th>Links</th>
+										<th>User</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+								<tbody id="dataContent">
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- END Default Table -->
+				</div>
+				<div class="col-xl-6">
+					<!-- Default Table -->
+					<div class="block block-rounded">
+						<div class="block-header block-header-default">
+							<h3 class="block-title" id="wordCloudTitle">global</h3>
+							<div class="block-options">
+								<div class="block-options-item">
+									<code id=""></code>
+								</div>
+							</div>
+						</div>
+						<div class="block-content" style="overflow: scroll;height: 36vh;">
+							<canvas id="canvas" style="width:auto;height: 90%;position: relative;left: 50%;bottom:0px;transform: translateX(-50%);"></canvas>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script>
+	</script>
+</body>
+
+</html>
