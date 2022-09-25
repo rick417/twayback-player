@@ -1,6 +1,6 @@
 {
   "name": "twayback-player",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a simple web interface to analyze html files from twayback",
   "main": "index.js",
   "scripts": {
