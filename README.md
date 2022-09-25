@@ -4,7 +4,7 @@
 <img src="assets/img/os.svg" style="margin-right: 5px;"> 
 <img src="assets/img/doc.svg" style="margin-right: 5px;"></div>
 <hr>
-<b>a simple web interface to analyze html files from <a href="https://github.com/Mennaruuk/twayback" target="_blank">twayback</a></b>.
+<b>a simple web interface to analyze html files from the OSINT tool <a href="https://github.com/Mennaruuk/twayback" target="_blank">twayback</a></b>.
 <p>(optimized for firefox)</p>
 <p align="center">
   <a href="#install">Install</a> |
