@@ -28,7 +28,8 @@ From source :
 
 ```console
 user@debian:~$ tar -xvf twayback-player-master.tar.gz
-user@debian:~$ npm link twayback-player-master
+user@debian:~$ cd twayback-player-master
+user@debian:~$ node bin/twayback-player.js
 ```
 
 ## use
