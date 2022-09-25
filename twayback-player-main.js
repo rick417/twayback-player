@@ -64,19 +64,19 @@ module.exports = {
     },
     makeTemplate: (rawpath) => {
         global.dataParsed[0].target = "@" + rawpath.split('/').pop();
-        let oneui = fs.readFileSync(path.resolve(__dirname, 'template', 'oneui.min.css'), 'utf-8');
+        let ui = fs.readFileSync(path.resolve(__dirname, 'template', 'ui.min.css'), 'utf-8');
         let template = fs.readFileSync(path.resolve(__dirname, 'template', 'template.html'), 'utf-8');
         let dayjs = fs.readFileSync(path.resolve(__dirname, 'template', 'dayjs.min.js'), 'utf-8');
         let wordcloud2 = fs.readFileSync(path.resolve(__dirname, 'template', 'wordcloud2.js'), 'utf-8');
-        let oneuiApp = fs.readFileSync(path.resolve(__dirname, 'template', 'oneui.app.min.js'), 'utf-8');
+        let uiApp = fs.readFileSync(path.resolve(__dirname, 'template', 'ui.app.min.js'), 'utf-8');
         let app = fs.readFileSync(path.resolve(__dirname, 'template', 'app.js'), 'utf-8');
         const $ = cheerio.load(template);
-        $('head').append('<style>' + oneui + '</style>');
+        $('head').append('<style>' + ui + '</style>');
         $('head').append('<script>' + dayjs + '</script>');
         $('head').append('<script>' + wordcloud2 + '</script>');
         $('head').append('<script>let allData = ' + JSON.stringify(global.dataParsed) + '</script>');
         $('body').append('<script>' + app + '</script>');
-        $('body').append('<script>' + oneuiApp + '</script>');
+        $('body').append('<script>' + uiApp + '</script>');
         fs.writeFileSync(path.resolve(rawpath, 'parsed_' + rawpath.split('/').pop() + '.html'), $.html(), (() => {
             console.log('the data is added to the page.')
         }));
