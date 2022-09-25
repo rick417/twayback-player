@@ -1,6 +1,6 @@
 {
   "name": "twayback-player",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "a simple web interface to analyze html files from twayback",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,10 @@
     "cli",
     "OSINT"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rick417/twayback-player.git"
+  },
   "author": "rick417 <rick417@protonmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -25,7 +29,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "twayback-player": "twayback-player.js"
+    "twaybackplayer": "twayback-player.js"
   },
   "os": [
     "linux",
