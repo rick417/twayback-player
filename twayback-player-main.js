@@ -1,5 +1,3 @@
-#!/usr/bin/env nodejs
-
 const fs = require('fs-extra');
 const path = require('path');
 const inquirer = require('inquirer');
