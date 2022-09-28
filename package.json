@@ -1,7 +1,7 @@
 {
   "name": "twayback-player",
-  "version": "0.1.5",
-  "description": "a simple web interface to analyze html files from twayback",
+  "version": "0.1.8",
+  "description": "a simple web interface to analyze html files from the OSINT tool twayback",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,9 @@
   "keywords": [
     "twayback",
     "cli",
-    "OSINT"
+    "OSINT",
+    "twitter",
+    "deleted"
   ],
   "repository": {
     "type": "git",
@@ -29,7 +31,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "twaybackplayer": "twayback-player.js"
+    "twayback-player": "bin/twayback-player.js"
   },
   "os": [
     "linux",
