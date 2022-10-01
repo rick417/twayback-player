@@ -1,6 +1,6 @@
 {
   "name": "twayback-player",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "a simple web interface to analyze html files from the OSINT tool twayback",
   "main": "index.js",
   "scripts": {
