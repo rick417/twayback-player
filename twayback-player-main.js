@@ -74,7 +74,6 @@ module.exports = {
         $('head').append('<script>' + wordcloud2 + '</script>');
         $('head').append('<script>let allData = ' + JSON.stringify(global.dataParsed) + '</script>');
         $('body').append('<script>' + app + '</script>');
-        $('body').append('<script>' + uiApp + '</script>');
         fs.writeFileSync(path.resolve(rawpath, 'parsed_' + rawpath.split('/').pop() + '.html'), $.html(), (() => {
             console.log('the data is added to the page.')
         }));
