@@ -78,8 +78,9 @@ module.exports = {
             console.log('the data is added to the page.')
         }));
         console.clear();
-        console.log('End of files parsing.')
-        console.log('Opening the file in the web browser (better compatibility with firefox).')
+        console.log('End of files parsing.');
+        console.log('File available here :  ' + path.resolve(rawpath, 'parsed_' + rawpath.split('/').pop() + '.html'));
+        console.log('Opening the file in the default web browser (better compatibility with firefox).');
         open(path.resolve(rawpath, 'parsed_' + rawpath.split('/').pop() + '.html'));
     },
     saveResult: (rawpath) => {
